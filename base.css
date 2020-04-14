@@ -1,0 +1,23 @@
+body {
+    background-color: whitesmoke;
+}
+
+.header {
+    margin: auto;
+    width: 95%;
+    overflow: hidden;
+    border: 3px;
+}
+
+.content {
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    overflow: hidden;
+    border-width: 20px;
+    border-color: black;
+    background-color: white;
+}
+.content h1, h2, h3 {
+    font-family: "Permanent Marker";
+}
