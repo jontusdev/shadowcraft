@@ -2,21 +2,25 @@
 <head>
 <title>Login to ShadowMC</title>
 <style>
+font-family: "Lucida Console", Courier, monospace;
 p.solid {
   border-color: green;
   border-width: 2px;
   border-style: solid;
   }
+ .loginbut  {
+   top: 400px;
+   left: 550px
+ }
 .center {
   position: absolute;
   top: 500px;
   left: 550px;
-  font-family: "Lucida Console", Courier, monospace;
   }
 .tleft {
     position: absolute;
     top: 0;
-    left: 500px;
+    left: 0;
     }
 
 /* Full-width input fields */
@@ -149,14 +153,15 @@ span.psw {
   <div class="center">
     <p class="solid"><center>Login with your ShadowMC account</center></p>
   </div> 
-  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
+  <div class="loginbut">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  </div>
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" action="/auth.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="shadow_logo.png" alt="Logo" class="avatar">
     </div>
 
     <div class="container">
